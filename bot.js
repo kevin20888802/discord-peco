@@ -1,6 +1,7 @@
 const fs = require('fs');
 const Discord = require('discord.js');
 const {prefix , token} = require('./config.json');
+var atoken = process.env.token;
 
 const active = new Map();
 
@@ -53,4 +54,4 @@ client.on('message' , (message) =>
 	}
 });
 
-client.login(token);
+client.login(atoken);
